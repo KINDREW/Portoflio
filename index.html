@@ -14,45 +14,36 @@
       src="https://kit.fontawesome.com/e40bbaa58f.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- font awersome -->
+    <script
+      src="https://kit.fontawesome.com/e40bbaa58f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="hero">
       <div class="hero-text">Welcome !</div>
-      <div class="hero-text2">Take a seat & enjoy</div>
+      <div class="hero-text2">Take a seat</div>
       <div class="hero-text3">& enjoy</div>
 
     </div>
-    
-  <div class="nav-container">
-    <div class="nav-item">
-      <a href="#">Home</a>
-    </div>
-    <div class="nav-item">
-      <a href="#">About</a>
-    </div>
-    <div class="nav-item">
-      <a href="#services">Services</a>
-    </div>
-    <div class="nav-item">
-      <a href="#">Contact</a>
-    </div>
-  </div>
-  
-  <i class="toggle-button fas fa-bars"></i>
   
   <div class="content collapsed">
     <div class="nav-container">
       <div class="nav-item">
+        
+
         <a href="#">Home</a>
       </div>
       <div class="nav-item">
-        <a href="#">About</a>
+        <a href="#about">About</a>
       </div>
       <div class="nav-item">
         <a href="#services">Services</a>
       </div>
       <div class="nav-item">
-        <a href="#">Contact</a>
+        <a href="#about">Contact</a>
       </div>
     </div>
   </div>
@@ -61,6 +52,7 @@
     <div class="blue">
         <div class="slider" id="services">
           <div>
+            <a href="weddings.html">
             <img
               src="./images/pexels-lukas-hartmann-1827234.jpg"
               alt="Image 3"
@@ -68,9 +60,11 @@
             <div class="caption-container">
               <p class="caption">Commercial</p>
             </div>
+            </a>
           </div>
           
           <div>
+            <a href="weddings.html">
             <img
               src="./images/young-stylish-dark-skinned-couple-standing-sunny-city.jpg"
               alt="Image 3"
@@ -78,6 +72,7 @@
             <div class="caption-container">
               <p class="caption">Lifestyle</p>
             </div>
+            </a>
           </div>
 
           <div>
@@ -90,6 +85,7 @@
           </div>
           
           <div>
+            <a href="weddings.html">
             <img
               class="pexel"
               src="./images/shine-wedding-altar-newlyweds-stands-backyard-decorated-with-balloons (1).jpg"
@@ -98,8 +94,10 @@
               <div class="caption-container">
                 <p class="caption">Events</p>
               </div>
+              </a>
           </div>
           <div>
+            <a href="weddings.html">
             <img
               class="potrait"
               src="./images/pexels-leah-kelley-5091121.jpg"
@@ -108,6 +106,7 @@
               <div class="caption-container">
                 <p class="caption">Potrait</p>
             </div>
+          </a>
           </div>
         </div>
       </div>
@@ -118,7 +117,7 @@
         showcase your personality
       </p>
     </div>
-    <div class="black contact">
+    <div class="black contact" id="about">
       <div class="blue">
         <div class="container text-center">
           <div class="row">
@@ -176,6 +175,13 @@
       </div>
     </div>
   </div>
+  <script>
+      hamburger = document.querySelector(".hamburger");
+      nav = document.querySelector("nav");
+      hamburger.onclick = function () {
+        nav.classList.toggle("active");
+      };
+    </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

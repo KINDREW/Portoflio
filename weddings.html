@@ -33,8 +33,7 @@
 
       .container1 {
         display: flex;
-        flex-direction: row;
-        /* height: 100vh; */
+        flex-wrap: wrap;
       }
 
       .column1 {
@@ -55,18 +54,49 @@
         text-align: center;
         font-size: larger;
         margin-top: 50%;
-       /* padding-left: 10px;   */
       }
-      h1{
-        
+
+      h1 {
         font-family: 'Pacifico', cursive;
       }
+
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+
+        .column {
+          height: auto;
+        }
+
+        p {
+          margin-top: 10px;
+        }
+
+  .container1 {
+    flex-direction: column;
+  }
+
+  .column1 {
+    flex: 1;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+
+  .column1 img {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 10px;
+    vertical-align: top;
+  }
+}
+
       
-    
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -77,7 +107,7 @@
         <p>
           <h1>Let's Capture that special moment</h1>
           <br>
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sapiente quae non hic obcaecati, quasi delectus ab voluptates, eveniet quod minima ducimus alias qui similique cupiditate voluptate sunt debitis eos enim nihil? Perspiciatis incidunt necessitatibus, dolor laudantium reiciendis eaque asperiores aut omnis! Odit nulla at dolores voluptate modi odio velit quasi sit, nobis, explicabo nemo consequatur a reiciendis quam libero.s</p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sapiente quae non hic obcaecati, quasi delectus ab voluptates, eveniet quod minima ducimus alias qui similique cupiditate voluptate sunt debitis eos enim nihil? Perspiciatis incidunt necessitatibus, dolor laudantium reiciendis eaque asperiores aut omnis! Odit nulla at dolores voluptate modi odio velit quasi sit, nobis, explicabo nemo consequatur a reiciendis quam libero.s</p>
       </div>
       <div class="column">
         <img src="./images/pexels-wendel-moretti-1730877.jpg" alt="Image 3" />
@@ -86,26 +116,14 @@
 
     <div class="container1">
       <div class="column1">
-        <img
-          src="./images/pexels-agung-pandit-wiguna-2788488.jpg"
-          alt="Image 1"
-        />
-        <img
-          src="./images/pexels-carsten-vollrath-13381459.jpg"
-          alt="Image 2"
-        />
+        <img src="./images/pexels-agung-pandit-wiguna-2788488.jpg" alt="Image 1" />
+        <img src="./images/pexels-carsten-vollrath-13381459.jpg" alt="Image 2" />
         <img src="./images/pexels-evg-kowalievska-3993256.jpg" alt="Image 3" />
       </div>
       <div class="column1">
         <img src="./images/pexels-evg-kowalievska-3993256.jpg" alt="Image 6" />
-        <img
-          src="./images/pexels-taha-samet-arslan-15530667.jpg"
-          alt="Image 8"
-        />
-        <img
-          src="./images/shine-wedding-altar-newlyweds-stands-backyard-decorated-with-balloons (1).jpg"
-          alt="Image 7"
-        />
+        <img src="./images/pexels-taha-samet-arslan-15530667.jpg" alt="Image 8" />
+        <img src="./images/shine-wedding-altar-newlyweds-stands-backyard-decorated-with-balloons (1).jpg" alt="Image 7" />
         <!-- Add more images as needed -->
       </div>
       <div class="column1">
