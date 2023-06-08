@@ -17,6 +17,10 @@ body {
   color: white;
 }
 
+a {
+  text-decoration: none;
+}
+
 .hero-text {
   position: absolute;
   top: 50%;
