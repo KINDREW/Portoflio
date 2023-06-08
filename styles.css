@@ -1,0 +1,335 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  /* margin: 20px; */
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url("./images/black-man-make-surprise-his-girlfriend-presented-her-gift-box.jpg")
+    no-repeat center/cover;
+  color: white;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  background: rgb(51, 102, 153);
+  width: fit-content;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.hero-text2 {
+  position: absolute;
+  top: 58%;
+  left: 100px;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.hero-text3 {
+  position: absolute;
+  top: 63%;
+  left: 100px;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.nav-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nav-item {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  /* line-height: 40px; */
+  text-decoration: none;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  /* text-decoration: dashed; */
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.content {
+  margin-top: 50px;
+  transition: max-height 0.3s;
+  overflow: hidden;
+}
+
+.collapsed {
+  max-height: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  overflow: hidden;
+}
+
+.slider img {
+  opacity: 0.6;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.slider img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.slider img:not(:hover) {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.slider img.center {
+  opacity: 1;
+  transform: scale(1.2);
+  /* z-index: 1; */
+}
+
+/* .slider img:not(.center):hover {
+  transform: scale(1.1);
+} */
+
+.slider img.center:hover {
+  transform: scale(0.9);
+}
+
+span {
+  display: block;
+}
+img {
+  color: aliceblue;
+}
+
+.caption-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.caption {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slider img {
+  transition: transform 0.3s, filter 0.3s;
+  filter: brightness(80%);
+  cursor: pointer;
+}
+
+.slider img:hover {
+  transform: scale(1.2);
+  filter: brightness(100%);
+}
+
+.slider img:not(:hover) {
+  transform: scale(0.9);
+}
+
+.slider img.center {
+  transform: scale(1.2, 1.2);
+  filter: brightness(100%);
+}
+
+.caption-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.caption {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.slider img {
+  border: 1px solid black;
+  border-radius: 30px;
+  height: 200px;
+}
+
+.slider img {
+  margin: -15px;
+}
+
+.banner {
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome {
+  background: blue;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.seat {
+  text-transform: capitalize;
+}
+
+.black {
+  /* background: rgb(171, 161, 148); */
+  /* background: rgb(171, 161, 148); */
+  /* height: 400px; */
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-top: -30px;
+}
+
+.blue {
+  background: rgb(171, 161, 148);
+  width: 100%;
+  height: 80%;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  text-transform: lowercase;
+  /* background: pink; */
+}
+
+.col {
+  text-align: left;
+}
+
+.col img {
+  width: 300px;
+  height: 350px;
+  border: 0px solid black;
+  border-radius: 40px;
+  margin-top: 130px;
+}
+
+.form-container {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+
+.form-group {
+  /* margin-bottom: 20px; */
+  /* margin-top: 50px; */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background: transparent;
+}
+
+button {
+  padding: 10px 20px;
+  background: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 10px;
+  border: 1px solid white;
+}
+
+.form-container h1 {
+  color: white;
+  font-size: 25px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding: 30px;
+}
+
+.socials i {
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+.bio {
+  margin-top: 100px;
+}
+
+.hello {
+  text-transform: uppercase;
+}
+
+.contact {
+  margin-top: -100px;
+}
+
+.caption {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: larger;
+  font-weight: bold;
+}
