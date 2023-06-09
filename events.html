@@ -14,9 +14,8 @@
 
       body {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         margin: 50px;
-        justify-content: space-between;
         background-color: whitesmoke;
         background-attachment: fixed;
         background-position: center;
@@ -26,24 +25,37 @@
       div {
         display: flex;
         flex-direction: column;
-        /* padding: 30px; */
+        align-items: center;
+        margin: 10px 0;
       }
 
       div img {
-        padding-top: 50px;
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        margin-top: 20px;
+      }
+
+      @media (min-width: 768px) {
+        /* Adjust the layout for larger screens */
+        body {
+          flex-direction: row;
+        }
+
+        div {
+          margin: 10px;
+        }
       }
     </style>
   </head>
   <body>
     <div>
       <img width="450px" src="./images/events/pexels-caio-59884.jpg" alt="" />
-
       <img
         width="450px"
         src="./images/events/pexels-wendy-wei-1190297.jpg"
         alt=""
       />
-
       <img
         width="450px"
         src="./images/events/pexels-wolfgang-2747449.jpg"
@@ -80,9 +92,7 @@
     </div>
     <div>
       <img width="450px" src="./images/events/pexels-lukas-306046.jpg" alt="" />
-
       <img width="450px" src="./images/events/pexels-lukas-306046.jpg" alt="" />
-
       <img
         width="450px"
         src="./images/events/pexels-pixabay-356065.jpg"

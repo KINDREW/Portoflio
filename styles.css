@@ -248,7 +248,7 @@ body {
 }
 
 .slider img {
-  border: 1px solid black;
+  border: 1px solid rgba(0, 61, 74, 0.4);
   border-radius: 30px;
   height: 200px;
 }
@@ -263,6 +263,30 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (max-width: 1198px) {
+  .slider {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-top: 30px;
+  }
+
+  .black,
+  .blue {
+    height: auto;
+  }
+
+  .slider img.center {
+    transform: scale(1);
+    filter: brightness(100%);
+  }
+
+  .slider img {
+    transform: scale(1);
+    filter: brightness(80%);
+  }
 }
 
 .welcome {
